@@ -1,17 +1,18 @@
-# How to Use Me
+# Park Ponder
 
-Assuming you are starting an app that you wish to call `rescue-mission` 
+John Muir, “The Father of the National Parks,” once exclaimed that going into a forest is to lose your mind and find your soul.
+But once we come back safely from our travels, how can we make sure that memories are documented?
 
-In your terminal:
+To ponder is to reflect. One method of reflection can be down in the form of a journal or diary.
 
-```
-git clone https://github.com/LaunchAcademy/rails-6-boilerplate
-cd rails-6-boilerplate 
-bundle
-yarn install
-```
+Park Ponder is a website for lovers of nature to share reflections on their journeys through the US National Parks.
 
-If you prefer, **you can rename your project with the `mv` command.**
+## Dependencies
 
-Starting from the directory above your app (likely challenges):
-mv <source_directory> <target_directory>
+
+## Instructions
+
+## Future State
+
+## Authors
+<li><a href="https://github.com/joshrmora">Josh Mora</a></li>
