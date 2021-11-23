@@ -1,0 +1,66 @@
+body {
+  font-style: normal;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #EEEEEE;
+}
+
+// Nav Bar
+
+.nav-bar{
+  display: flex;
+  align-content:center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #87A96B;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
+}
+.top-bar-left{
+  font-size: 3rem;
+  padding-top: 0%;
+  font-family:Muli,sans-serif;
+  color: #8D8D8D;
+
+}
+.nav-text{
+  font-size: 1.3rem;
+  margin-top: 20px;
+  border: 1px solid rgb(45, 46, 46);
+  background-color: rgb(255, 255, 255);
+  padding: 5px 5px;
+  color: #4B6F44;
+
+}
+.top-bar-right{
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+// Forms 
+
+.signup-header{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 50px;
+}
+
+.signup-form{
+  margin: auto;
+  text-align: left;
+  font-family: roboto, arial, sans-sarif;
+  font-size: 15px;
+  width: 50%;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  border: 2px solid gray;
+}
+
+.button {
+  padding: 13px 14px;
+  margin: 16px 80px;
+  color: white;
+}

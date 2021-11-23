@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>React on Rails</title>
+  <title>Park Ponder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+  <div class="nav-bar">
+    <span class="top-bar-left"> <%= link_to "Park Ponder", root_path %></span>
+    <div class="top-bar-right">
+      <% if signed_in? %>
+        <span class="nav-text"><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></span>
+      <% else %>
+        <span class="nav-text"><%= link_to "Sign In", new_user_session_path %></span>
+        <span class="nav-text"><%= link_to "Sign Up", new_user_registration_path %></span>
+      <% end %>
+    </div>
+  </div>
 
   <%- flash.each do |key, value| -%>
     <div class="flash flash-<%= key %>">
