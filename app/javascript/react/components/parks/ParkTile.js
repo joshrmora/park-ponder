@@ -4,8 +4,8 @@ const ParkTile = (props) => {
 
   const {park} = props
   return (
-    <div>
-      <h1>{park.name}</h1>
+    <div className="park-tile cell small-6">
+      {park.name}
     </div>
   )
 }

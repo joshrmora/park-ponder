@@ -12,16 +12,18 @@ const ParksIndexPage = (props) => {
 
   const parkTiles = parks.map((park) => {
     return (
-      <div className="cell small-4">
-        <ParkTile
-          park={park}
-        />
-      </div>
+      <ParkTile
+        park={park}
+      />
     )
   })
 
   return (
-    <h1>{parkTiles}</h1>
+    <div className="park-tile-container" >
+      <div className="grid-x grid-margin-x grid-margin-10 space">
+        {parkTiles}
+      </div>
+    </div>
   )
 }
 
