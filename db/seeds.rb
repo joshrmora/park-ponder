@@ -22,14 +22,13 @@ all_parks = parsed_response["data"]
 all_parks.each do |park|
   if park["designation"] == "National Park"
     Park.create(
-      activities: park["activities"],
       address: park["addresses"],
       code: park["parkCode"],
       description: park["description"],
-      image: park["images"][0],
+      image: park["images"][0]["url"],
       name: park["fullName"],
       state: park["states"],
-      url: park["url"],
+      url: park["url"]
     )
   end
 end

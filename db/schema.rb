@@ -16,11 +16,10 @@ ActiveRecord::Schema.define(version: 2021_11_25_010915) do
   enable_extension "plpgsql"
 
   create_table "parks", force: :cascade do |t|
-    t.text "activities", default: [], array: true
     t.string "address", null: false
     t.string "code", null: false
     t.text "description", null: false
-    t.string "image", null: false
+    t.text "image", null: false
     t.string "name", null: false
     t.string "state", null: false
     t.string "url", null: false

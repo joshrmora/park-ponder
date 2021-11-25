@@ -1,5 +1,4 @@
 class Park < ApplicationRecord
-  validates :activities, presence: true
   validates :address, presence: true
   validates :code, presence: true
   validates :description, presence: true
