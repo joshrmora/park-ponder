@@ -10,7 +10,6 @@ feature 'user is able to' do
         click_link "Sign Up"
 
         expect(page).to have_content("Sign up")
-
     end
 
     scenario 'is able to sign up' do

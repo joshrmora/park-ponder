@@ -1,7 +1,15 @@
 body {
-  font-style: normal;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #EEEEEE;
+}
+
+@font-face {
+  font-family: Facultad;
+  src:url(Facultad-Regular.otf);
+}
+
+@font-face {
+  font-family: Lyon;
+  src:url(Lyon-Regular.ttf);
 }
 
 // Nav Bar
@@ -11,29 +19,48 @@ body {
   align-content:center;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #87A96B;
+  background-color: #a2abab;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
 }
 .top-bar-left{
   font-size: 3rem;
+  font-family: Facultad;
+  letter-spacing: -1px;
   padding-top: 0%;
-  font-family:Muli,sans-serif;
-  color: #8D8D8D;
-
+  margin-left: 30px;
 }
+
+.top-bar-left a{
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;  
+}
+
+.top-bar-left a:hover{
+  color: #e5e8b6;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #586994; 
+}
+
 .nav-text{
-  font-size: 1.3rem;
+  font-size: 17px;
   margin-top: 20px;
-  border: 1px solid rgb(45, 46, 46);
-  background-color: rgb(255, 255, 255);
-  padding: 5px 5px;
-  color: #4B6F44;
-
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: white;
+  padding: 10px;
 }
+
 .top-bar-right{
   margin-top: 20px;
-  padding: 0 10px;
+  padding: 0 30px;
 }
+
+.top-bar-right a{
+  color: black !important;
+  font-family: roboto, arial, sans-sarif !important;
+}
+
 
 // Forms 
 
@@ -63,4 +90,44 @@ body {
   padding: 13px 14px;
   margin: 16px 80px;
   color: white;
+}
+
+// Parks
+
+.park-tile {
+  background-color: #B4C4AE;
+  text-align: center;
+  border-radius: 7px;
+  margin: 0px 0px 30px 30px;
+  height: 350px;
+  padding: 10px;
+}
+
+.park-tile-container {
+  margin: 50px 100px 100px 100px;
+  font-family: "Lyon", sans-serif;
+  font-size: 30px;
+}
+
+.park-tile-image {
+  position: relative;
+  width: 100%;   
+  height: 275px;
+  overflow: hidden;
+  padding: 20px;
+  opacity: 1;
+}
+
+.park-tile-image:hover {
+  opacity: 0.8;
+  transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;
+  -webkit-transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;
+  -moz-transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;  
+}
+
+.park-tile-image img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

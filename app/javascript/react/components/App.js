@@ -1,7 +1,14 @@
 import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import ParksIndexPage from './parks/ParksIndexPage'
 
 export const App = (props) => {
-  return (<h1>Make It So React</h1>)
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route path="/parks" component={ParksIndexPage} />
+      </Switch>
+    </BrowserRouter>)
 }
 
 export default App
