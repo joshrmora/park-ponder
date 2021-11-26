@@ -18,6 +18,7 @@ const ParksIndexPage = (props) => {
     )
   })
 
+
   return (
     <div className="park-tile-container" >
       <div className="grid-x grid-margin-x grid-margin-10 space">

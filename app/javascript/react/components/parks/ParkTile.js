@@ -8,7 +8,6 @@ const ParkTile = (props) => {
   image = <img className="band-tile-image" src={park.image}/>
 
   return (
-
     <div className="park-tile cell small-6">
       <div className="park-tile-image">
         {image}

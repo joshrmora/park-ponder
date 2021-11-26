@@ -6,12 +6,12 @@ feature "user is able to" do
     scenario "sign out" do
         visit "/"
 
-        click_link "Sign In"
+        click_link "Log In"
 
         fill_in 'Email', with: test_user.email
         fill_in 'Password', with: test_user.password
         
-        click_button "Log in"
+        click_button "Log In"
 
         click_link "Sign Out"
 
