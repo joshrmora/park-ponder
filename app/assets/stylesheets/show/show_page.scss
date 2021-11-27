@@ -1,0 +1,40 @@
+// Show Page
+
+.show-container{
+  margin: auto;
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
+}
+
+.show-name{
+  font-size: 40px;
+  font-family: "Lyon", sans-serif;
+  text-align: center;
+  padding: 10px 0px 5px;
+}
+
+.show-description{
+  font-size: 20px;
+  font-family: roboto, arial, sans-sarif;
+  padding: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.show-image {
+  width: 70%;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.show-location {
+  text-align: center;
+  font-size: 25px;
+}
