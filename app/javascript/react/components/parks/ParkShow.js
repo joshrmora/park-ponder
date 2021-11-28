@@ -8,14 +8,14 @@ const ParkShow = (props) => {
   image = <img className="band-tile-image" src={park.image} />
 
   return(
-    <div class="show-container">
-      <div class="show-image">
+    <div className="show-container">
+      <div className="show-image">
         {image}
       </div>
-      <h1 class="show-name">
+      <h1 className="show-name">
         {park.name}
       </h1>
-      <h2 class="show-description">
+      <h2 className="show-description">
         <p className="show-location">{park.city}, {park.state}</p>
         <p>{park.description}</p>
       </h2>

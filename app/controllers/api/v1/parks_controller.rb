@@ -4,7 +4,7 @@ class Api::V1::ParksController < ApplicationController
   end
 
   def show
-    render json: Park.find(params[:id])
+    render json: Park.find(params[:id]), include: 'journals.user'
   end
 
 end
