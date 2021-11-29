@@ -22,7 +22,7 @@ const ParkShowContainer = (props) => {
     })
     helperFetch('/api/v1/users').then(userData => {
       if (userData) {
-        setUser(userData.user)
+        setUser(userData.username)
       }
     })
   }, [])
@@ -48,7 +48,7 @@ const ParkShowContainer = (props) => {
       } else {
         setJournals([
           ...journals,
-          newJournal.journal
+          newJournal
         ])
       }
       setFormData({
@@ -57,14 +57,15 @@ const ParkShowContainer = (props) => {
         park_id: parkId
       })
     } catch (err) {
+      console.log(err)
     }
   }
-  
+
   const journalTiles = journals.map((journal) => {
     return (
       <JournalTiles
         journal={journal}
-        user={journal.user_id}
+        user={user}
       />
     )
   })
@@ -83,8 +84,10 @@ const ParkShowContainer = (props) => {
       <ParkShow
         park={park}
       />
-      <div>
+      <div className="show-container">
         {createJournals}
+      </div>
+      <div className="show-container">
         {journalTiles}
       </div>
     </div>
