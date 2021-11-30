@@ -7,7 +7,7 @@ import JournalTiles from './JournalTiles'
 const ParkShowContainer = (props) => {
   const [park, setPark] = useState([])
   const [journals, setJournals] = useState([])
-  const [user, setUser] = useState({})
+  const [user, setUser] = useState([])
   const parkId = props.match.params.id
   const [formData, setFormData] = useState({
     rating: "",
@@ -21,9 +21,7 @@ const ParkShowContainer = (props) => {
       setJournals(parkData.journals)
     })
     helperFetch('/api/v1/users').then(userData => {
-      if (userData) {
-        setUser(userData.username)
-      }
+      setUser(userData.username)
     })
   }, [])
 

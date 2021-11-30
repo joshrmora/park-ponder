@@ -10,7 +10,7 @@ require 'json'
 
 Park.destroy_all
 
-user_1 = User.create(email: "admin@mail.com", password: "password", username: "admin", first_name: "admin", role: "admin")
+user_1 = User.create(email: "admin@mail.com", password: "password", username: "admin", first_name: "admin", last_name: "admin", role: "admin")
 
 url = "https://developer.nps.gov/api/v1/parks"
 NPS_KEY = ENV["NPS_KEY"]

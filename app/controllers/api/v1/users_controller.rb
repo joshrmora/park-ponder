@@ -6,4 +6,8 @@ class Api::V1::UsersController < ApplicationController
       render json: {}, status: 401
     end 
   end
+
+  def show
+    @user = User.find(params[:id])
+  end
 end

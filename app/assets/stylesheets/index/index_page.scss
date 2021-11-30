@@ -18,7 +18,7 @@ body {
 }
 
 .park-tile-container {
-  margin: 50px 100px 100px 100px;
+  margin: 100px;
   font-family: "Lyon", sans-serif;
   font-size: 30px;
 }
@@ -46,7 +46,11 @@ body {
   object-fit: cover;
 }
 
-// Forms 
+// Forms
+
+.signup-container {
+  margin: 100px;
+}
 
 .signup-header{
   font-size: 30px;
