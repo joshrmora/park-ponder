@@ -5,16 +5,27 @@ body {
 }
 
 .park-tile {
-  background-color: #B4C4AE;
+  background-color: #646E68;
   text-align: center;
-  border-radius: 7px;
+  border-radius: 5px;
   margin: 0px 0px 30px 30px;
-  height: 350px;
+  height: 340px;
   padding: 10px;
-}
 
-.park-tile a {
-  color: black;
+  a {
+    color: white;
+    font-family: Argent;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  a:hover {
+    color: #FAC978;
+  }
+
+  img {
+    border-radius: 5px;
+  }
 }
 
 .park-tile-container {

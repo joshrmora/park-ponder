@@ -33,15 +33,15 @@ const JournalsForm = (props) => {
   }
 
   return (
-    <div className="cell small-8">
+    <div className="park-journal">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="rating" className="ratings">Difficulty</label>
+        <label htmlFor="rating" className="journal-rating">Difficulty</label>
 
         <div className="journal-button">
           {ratingButtons}
         </div>
 
-        <label htmlFor="body" className="ratings">Journal</label>
+        <label htmlFor="body" className="journal-rating">Journal</label>
         <textarea
           type="text"
           name="body"
@@ -50,7 +50,7 @@ const JournalsForm = (props) => {
           value={formData.body}
         />
         <input
-          className="button"
+          className="journal-submit"
           type="submit" />
       </form>
     </div>

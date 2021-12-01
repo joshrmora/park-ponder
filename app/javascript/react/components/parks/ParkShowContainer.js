@@ -27,7 +27,7 @@ const ParkShowContainer = (props) => {
 
   const addNewJournal = async (formPayload) => {
     try {
-      const response = await fetch("/api/v1/journals", {
+      const response = await fetch("/journals", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -82,10 +82,8 @@ const ParkShowContainer = (props) => {
       <ParkShow
         park={park}
       />
-      <div className="show-container">
+      <div className="journal-container">
         {createJournals}
-      </div>
-      <div className="show-container">
         {journalTiles}
       </div>
     </div>

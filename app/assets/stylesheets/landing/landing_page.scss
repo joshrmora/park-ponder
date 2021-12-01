@@ -1,7 +1,28 @@
 .landing-container {
-  margin: 100px;
-  font-family: "Lyon", sans-serif;
+  margin: 150px 100px 50px 100px;
+  font-family: roboto, arial, sans-sarif !important;
   background-color: #FFFFFF;
   padding: 10px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
+  text-align:center;
+  color: #4C4E52;
+
+  img {
+    width: 25%;
+    height: 25%;
+  } 
+
+  a {
+    font-size: 50px;
+    color: #646E68;
+    font-weight: 600;
+    opacity: 0.5;
+  }
+
+  a:hover {
+    color: #E17F7F;
+    opacity: 1;
+  transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;
+  -webkit-transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;
+  -moz-transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;  
+  }
 }

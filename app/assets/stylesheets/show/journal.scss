@@ -1,8 +1,55 @@
+.journal-container{
+  margin: auto;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
+}
+
 .journal-button {
   display: flex;
-  align-content:center;
+  align-content:left;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0px 1rem;
   width: 20%;
+}
+
+.journal-tile {
+  margin: 50px;
+  padding: 10px;
+  background-color: #EEEEEE;
+}
+
+.journal-user {
+  font-size: 25px;
+}
+
+.journal-body {
+  font-size: 20px;
+}
+
+.edit-div {
+  margin: 100px;
+}
+
+.journal-rating {
+  font-size: 40px;
+}
+
+.park-journal {
+  margin: 50px;
+  padding: 10px;
+}
+
+.journal-submit {
+  padding: 13px 14px;
+  background-color: #646E68;
+  color: white;
+}
+
+.journal-rating {
+  font-size: 25px;
+  margin-bottom: 10px;
 }

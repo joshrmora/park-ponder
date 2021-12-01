@@ -5,48 +5,46 @@
   align-content:center;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #a2abab;
+  background-color: #254570;
   position: fixed;
   width: 100%;
   z-index: 10;
   top: 0;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.2)
 }
+
 .top-bar-left{
   font-size: 3rem;
-  font-family: Facultad;
-  letter-spacing: -1px;
+  font-family: Argent;
+  font-weight: 600;
+  letter-spacing: 3px;
   padding-top: 0%;
   margin-left: 30px;
-}
 
-.top-bar-left a{
-  color: black;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;  
-}
+  a {
+    color: white;
+  }
 
-.top-bar-left a:hover{
-  color: #e5e8b6;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #586994; 
-}
-
-.nav-text{
-  font-size: 17px;
-  margin-top: 20px;
-  border: 1px solid black;
-  border-radius: 7px;
-  background-color: white;
-  padding: 10px;
+  a:hover{
+    color: #FAC978;
+  }
 }
 
 .top-bar-right{
   margin-top: 20px;
   padding: 0 30px;
+ 
+  a {
+    color: #4C4E52 !important;
+    font-family: roboto, arial, sans-sarif !important;
+  }
+
+  .nav-text{
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 20px;
+  }
 }
 
-.top-bar-right a{
-  color: black !important;
-  font-family: roboto, arial, sans-sarif !important;
-}
