@@ -1,5 +1,9 @@
 // Show Page
 
+.s-container {
+  margin-bottom: 50px;
+}
+
 .show-container{
   margin: auto;
   width: 70%;
@@ -15,8 +19,15 @@
   font-family: Argent;
   font-weight: 600;
   letter-spacing: 2px;
-  color: #646E68;
   text-align: center;
+
+  a {
+    color: #646E68;
+  }
+
+  a:hover {
+    color: #254570
+  }
 }
 
 .show-description{

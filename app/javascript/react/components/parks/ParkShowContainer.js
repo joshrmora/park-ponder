@@ -78,7 +78,7 @@ const ParkShowContainer = (props) => {
   )
 
   return (
-    <div>
+    <div class="s-container">
       <ParkShow
         park={park}
       />

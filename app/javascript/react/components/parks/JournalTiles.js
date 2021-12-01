@@ -17,6 +17,7 @@ const JournalTiles = (props) => {
         <p className="journal-rating">{formattedRating}</p>
       </div>
       <h3 className="journal-body">{journal.body}</h3>
+      {editElement}
     </div>
   )
 }
