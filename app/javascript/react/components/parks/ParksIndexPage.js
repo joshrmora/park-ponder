@@ -4,6 +4,7 @@ import ParkTile from './ParkTile'
 
 const ParksIndexPage = (props) => {
   const [parks, setParks] = useState([])
+  
   useEffect(() => {
     helperFetch('api/v1/parks').then(parksData => {
       setParks(parksData)
@@ -17,7 +18,6 @@ const ParksIndexPage = (props) => {
       />
     )
   })
-
 
   return (
     <div className="park-tile-container" >

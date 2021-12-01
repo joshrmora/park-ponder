@@ -1,0 +1,49 @@
+// Show Page
+
+.show-container{
+  margin: auto;
+  width: 70%;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
+}
+
+.show-name{
+  font-size: 40px;
+  font-family: Argent;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #646E68;
+  text-align: center;
+}
+
+.show-description{
+  font-size: 20px;
+  font-family: roboto, arial, sans-sarif;
+
+  padding: 10px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.show-image {
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+
+  img {
+    border-radius: 2px;
+  }
+}
+
+.show-location {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: #E17F7F
+}

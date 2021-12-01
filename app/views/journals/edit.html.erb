@@ -1,0 +1,16 @@
+<div class="edit-div">
+  <%= form_for (@journal) do |f| %>
+    <div>
+      <%= f.label :body %>
+      <%= f.text_area :body %>
+    </div>
+
+
+    <div class="update-journal-form field">
+      <%= f.submit "Make Changes", class:"button"%>
+    </div>
+  <%end%>
+  <%# <div class="field">
+    <%=button_to "Delete Band", @band, method: :delete, data: { confirm: "Are you sure?" }, class:"button" %>
+  <%#/div> %>
+</div>
