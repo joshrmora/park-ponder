@@ -1,28 +1,27 @@
 .landing-container {
   margin: 150px 100px 50px 100px;
   font-family: roboto, arial, sans-sarif !important;
-  background-color: #FFFFFF;
+  background-color: #254570;
   padding: 10px;
   text-align:center;
-  color: #4C4E52;
+  color: #eeeeee;
 
   img {
-    width: 25%;
-    height: 25%;
+    width: 30%;
+    height: 30%;
   } 
 
   a {
     font-size: 50px;
-    color: #646E68;
+    color: #eeeeee;
     font-weight: 600;
-    opacity: 0.5;
   }
 
   a:hover {
     color: #E17F7F;
     opacity: 1;
-  transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;
-  -webkit-transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;
-  -moz-transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;  
+    transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;
+    -webkit-transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;
+    -moz-transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;  
   }
 }

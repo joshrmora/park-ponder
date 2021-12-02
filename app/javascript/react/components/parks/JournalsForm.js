@@ -14,7 +14,7 @@ const JournalsForm = (props) => {
 
   const ratingButtons = (numbers).map(number => {
     return (
-      <div key={number}>
+      <div className="bullet-container" key={number}>
         <input
           type="radio"
           name="rating"

@@ -13,10 +13,10 @@ const ParkShow = (props) => {
         {image}
       </div>
       <h1 className="show-name">
-        {park.name}
+        <a href={park.url} target="_blank">{park.name}</a>
       </h1>
       <h2 className="show-description">
-        <p className="show-location">{park.city}, {park.state}</p>
+        <p className="show-location">📍 {park.city}, {park.state}</p>
         <p>{park.description}</p>
       </h2>
     </div>

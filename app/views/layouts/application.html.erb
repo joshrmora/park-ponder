@@ -12,10 +12,11 @@
   <div class="nav-bar">
     <span class="top-bar-left"> <%= link_to "Park Ponder", root_path %></span>
     <div class="top-bar-right">
+      <span class="nav-text"><%= link_to "Explore", "/parks" %></span>
       <% if signed_in? %>
         <span class="nav-text"><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></span>
       <% else %>
-        <span class="nav-text"><%= link_to "Sign Up", new_user_registration_path %></span>
+        <span class="nav-text sign-up"><%= link_to "Sign Up", new_user_registration_path %></span>
         <span class="nav-text"><%= link_to "Log In", new_user_session_path %></span>
       <% end %>
     </div>

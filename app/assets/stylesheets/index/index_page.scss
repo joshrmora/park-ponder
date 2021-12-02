@@ -1,16 +1,19 @@
 // Index
 
 body {
-  background-color: #EEEEEE;
+  background-color: #254570;
 }
 
 .park-tile {
-  background-color: #646E68;
+  background-color: #213e64;
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,.4);
   text-align: center;
   border-radius: 5px;
-  margin: 0px 0px 30px 30px;
-  height: 340px;
+  border: 1.5px solid #c0c0c0;
+  margin: 30px 10px 15px 10px;
+  height: 345px;
   padding: 10px;
+  height: 360px;
 
   a {
     color: white;
@@ -24,13 +27,14 @@ body {
   }
 
   img {
+    width: 80%;
     border-radius: 5px;
   }
 }
 
 .park-tile-container {
   margin: 100px;
-  font-family: "Lyon", sans-serif;
+  font-family: Argent;
   font-size: 30px;
 }
 
@@ -44,7 +48,6 @@ body {
 }
 
 .park-tile-image:hover {
-  opacity: 0.8;
   transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;
   -webkit-transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;
   -moz-transition:visibility 0s ease-in-out 0.4s, opacity 0.4s ease-in-out;  
