@@ -91,9 +91,34 @@ input {
   background-color: white;
   padding: 10px;
   border-radius: 20px;
-  width: 10%;
+  width: 15%;
 
   a {
     color: #254570;
+  }
+}
+
+.journal-edit-form{
+  margin: auto;
+  width: 70%;
+  margin-top: 120px;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
+}
+
+.journal-edit-button{
+  padding: 13px 14px;
+  background-color: #fac978;
+  border: 1px solid #fac978;
+  color: #4c4e52;
+  border-radius: 20px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #4c4e52;
+    border: 1px solid #4c4e52;
   }
 }
