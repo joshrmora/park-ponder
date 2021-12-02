@@ -7,7 +7,7 @@ const JournalTiles = (props) => {
   let editElement
 
   if (user === journal.user.username) {
-    editElement = <span ><a className="edit-button" href={`/journals/${journal.id}/edit`}>Edit</a></span>
+    editElement = <span ><a href={`/journals/${journal.id}/edit`}>Edit</a></span>
   }
 
   return (
@@ -17,7 +17,9 @@ const JournalTiles = (props) => {
         <p className="journal-rating">{formattedRating}</p>
       </div>
       <h3 className="journal-body">{journal.body}</h3>
-      {editElement}
+      {user === journal.user.username && 
+        <div className="journal-edit">{editElement}</div>
+      }
     </div>
   )
 }

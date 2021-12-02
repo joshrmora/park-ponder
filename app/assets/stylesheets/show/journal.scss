@@ -5,6 +5,7 @@
   margin-bottom: 10px;
   background-color: white;
   padding: 10px;
+  border-radius: 6px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
 }
 
@@ -17,18 +18,20 @@
 }
 
 .journal-tile {
-  margin: 50px;
-  padding: 10px;
+  border-radius: 4px;
+  margin: 20px;
+  padding: 30px;
   background-color: #EEEEEE;
 }
 
 .journal-user {
-  font-size: 30px;
+  font-size: 28px;
+  font-weight: 900;
   color: #646E68;
 }
 
 .journal-body {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .edit-div {
@@ -42,15 +45,55 @@
 .park-journal {
   margin: 50px;
   padding: 10px;
+
+  .journal-rating {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .bullet-container {
+    padding-left: 30px;
+
+    .ratings {
+      font-weight: bold;
+      color: #4c4e52;
+    }
+  }
+}
+
+input {
+  border-radius: 4px;
 }
 
 .journal-submit {
   padding: 13px 14px;
-  background-color: #646E68;
-  color: white;
+  background-color: #fac978;
+  border: 1px solid #fac978;
+  color: #4c4e52;
+  border-radius: 20px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #4c4e52;
+    border: 1px solid #4c4e52;
+  }
 }
 
 .journal-rating {
   font-size: 25px;
   margin-bottom: 10px;
+}
+
+.journal-edit{
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  width: 5%;
+
+  a {
+    color: #254570;
+  }
 }
