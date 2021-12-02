@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root "homes#index"
 
-  resources :journals, only: [:index, :create, :update, :edit]
+  resources :journals, only: [:index, :create, :update, :edit, :destroy]
 
   get "/parks", to: "homes#index"
   get "/parks/:id", to: "homes#index"

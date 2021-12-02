@@ -7,7 +7,7 @@ const JournalTiles = (props) => {
   let editElement
 
   if (user === journal.user.username) {
-    editElement = <span ><a href={`/journals/${journal.id}/edit`}>Edit</a></span>
+    editElement = <span ><a href={`/journals/${journal.id}/edit`}>Edit / Delete</a></span>
   }
 
   return (

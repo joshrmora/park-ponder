@@ -26,6 +26,15 @@ class JournalsController < ApplicationController
     end
   end
 
+  def destroy
+    @journal = Journal.find(params[:id])
+
+    if @journal.destroy
+      flash.now[:notification] = "Journal has been deleted"
+      redirect_to "/parks/#{@journal.park_id}"
+    end
+  end
+
   private
 
   def journal_params
