@@ -6,12 +6,9 @@ To ponder is to reflect. One method of reflection can be down in the form of a j
 
 Park Ponder is a website for lovers of nature to share reflections on their journeys through the US National Parks.
 
-## Dependencies
+## Usage
 
-
-## Instructions
-
-## Future State
+Visit <a href="https://park-ponder.herokuapp.com/">Park Ponder here!</a> Once a person creates an account, users can add journal reflections on the parks they have visited.
 
 ## Authors
-<li><a href="https://github.com/joshrmora">Josh Mora</a></li>
+<li><a href="https://www.linkedin.com/in/joshrmora/">Josh Mora</a></li>
