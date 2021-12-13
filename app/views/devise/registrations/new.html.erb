@@ -5,27 +5,27 @@
       <%= render "devise/shared/error_messages", resource: resource %>
 
       <div class="field">
-        <%= f.label :first_name, class: "ratings" %><br />
+        <%= f.label :first_name, class: "signup-text" %><br />
         <%= f.text_field :first_name%>
       </div>
 
       <div class="field">
-        <%= f.label :last_name, class: "ratings" %><br />
+        <%= f.label :last_name, class: "signup-text" %><br />
         <%= f.text_field :last_name%>
       </div>
 
       <div class="field">
-        <%= f.label :username, class: "ratings" %><br />
+        <%= f.label :username, class: "signup-text" %><br />
         <%= f.text_field :username%>
       </div>
 
       <div class="field">
-        <%= f.label :email, class: "ratings" %><br />
+        <%= f.label :email, class: "signup-text" %><br />
         <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
       </div>
 
       <div class="field">
-        <%= f.label :password %>
+        <%= f.label :password, class: "signup-text"  %>
         <% if @minimum_password_length %>
         <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
@@ -33,7 +33,7 @@
       </div>
 
       <div class="field">
-        <%= f.label :password_confirmation %><br />
+        <%= f.label :password_confirmation, class: "signup-text" %><br />
         <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
       </div>
 
@@ -42,7 +42,7 @@
       </div>
     <% end %>
 
-    <%= render "devise/shared/links" %>
+    
     </div>
   </div>
 </div>

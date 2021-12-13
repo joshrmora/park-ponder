@@ -63,7 +63,14 @@ body {
 // Forms
 
 .signup-container {
-  margin: 100px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 50%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px 0 rgba(0,0,0,.2)
 }
 
 .signup-header{
@@ -77,16 +84,31 @@ body {
   margin: auto;
   text-align: left;
   font-family: roboto, arial, sans-sarif;
-  font-size: 15px;
-  width: 50%;
+  width: 70%;
   background-color: white;
   padding: 20px;
   margin-bottom: 50px;
-  border: 2px solid gray;
+}
+
+.signup-text{
+  font-size: 18px;
 }
 
 .button {
   padding: 13px 14px;
-  margin: 16px 80px;
-  color: white;
+  background-color: #fac978;
+  border: 1px solid #fac978;
+  color: #4c4e52;
+  border-radius: 20px;
+  margin-right: 5px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #4c4e52;
+    border: 1px solid #4c4e52;
+  }
+}
+
+.actions {
+  margin-top: 10px;
 }

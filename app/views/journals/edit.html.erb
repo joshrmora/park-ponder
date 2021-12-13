@@ -1,16 +1,32 @@
-<div class="edit-div">
+<div class="journal-edit-form">
   <%= form_for (@journal) do |f| %>
 
     <div>
-      <%= f.label :body %>
+      <%= f.label "Difficulty", class: "journal-rating" %>
+      <%= f.radio_button :rating, '1' %>
+      <%= f.label "1" %>
+      <%= f.radio_button :rating, '2' %>
+      <%= f.label "2" %>
+      <%= f.radio_button :rating, '3' %>
+      <%= f.label "3" %>
+      <%= f.radio_button :rating, '4' %>
+      <%= f.label "4" %>
+      <%= f.radio_button :rating, '5' %>
+      <%= f.label "5" %>
+    </div>
+
+    <div>
+      <%= f.label "Journal", class: "journal-rating" %>
       <%= f.text_area :body %>
     </div>
 
-    <div class="update-journal-form field">
-      <%= f.submit "Make Changes", class:"button"%>
+    <div>
+      <%= f.submit "Update Journal", class:"journal-edit-button"%>
     </div>
   <%end%>
-  <div class="field">
-    <%=button_to "Delete Journal", @journal, method: :delete, data: { confirm: "Are you sure?" }, class:"button" %>
+
+  <div>
+    <%=button_to "Delete Journal", @journal, method: :delete, data: { confirm: "Are you sure?" }, class:"journal-edit-button" %>
   </div>
+  
 </div>
